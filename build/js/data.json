@@ -121,14 +121,14 @@
     },
     {
       "name": "AniDuckStudio",
-      "img": "../img/clients/21.png",
+      "img": "./img/clients/21.png",
       "subscribersCount": "824 тыс. подписчиков",
       "link": "https://www.youtube.com/user/AniDuckStudio",
       "status": "pro"
     },
     {
       "name": "Smart Business",
-      "img": "../img/clients/22.png",
+      "img": "./img/clients/22.png",
       "subscribersCount": "101 тыс. подписчиков",
       "link": "https://www.youtube.com/user/TakprostoBiz",
       "status": ""
