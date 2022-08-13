@@ -1,0 +1,16 @@
+@mixin fontNeue($fontWeight:400) {
+  font-family: $fontNeue;
+  font-weight: $fontWeight;
+}
+
+@mixin trans($prop:color) {
+  transition: $prop 0.1s;
+}
+
+@mixin trans2($prop, $prop2) {
+  transition: $prop 0.1s, $prop2 0.1s;
+}
+
+@mixin transAll($prop: all) {
+  transition: $prop 0.1s;
+}

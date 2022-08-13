@@ -1,0 +1,85 @@
+.portfolio {
+  margin-bottom: 144px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.portfolio__container {
+  position: relative;
+  padding: 0 45px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: calc(100% + 50px);
+    width: 60px;
+    height: 53px;
+    background-image: url("../img/clients-triangle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 0.5s;
+  }
+
+  @media (max-width: 1600px) {
+
+    &:after {
+      right: 100%;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 10px;
+  }
+}
+
+.portfolio__title {
+  margin-bottom: 50px;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 1.4px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 144px;
+
+  @media (max-width: $desktop) {
+    justify-content: space-around;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 40px;
+  }
+}
+
+.portfolio__item {
+  flex-basis: 300px;
+  flex-shrink: 0;
+  margin-top: 50px;
+
+  @media (max-width: $mobile) {
+    flex-basis: 270px;
+  }
+}
+
+.portfolio__btn-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 91px;
+
+  button {
+    background-color: transparent;
+  }
+}

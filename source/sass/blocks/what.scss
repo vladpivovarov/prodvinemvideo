@@ -1,0 +1,273 @@
+.what__list {
+  position: relative;
+  height: 660px;
+
+  @media (max-width: 800px) {
+    height: 1450px;
+  }
+
+  @media (max-width: $mobile) {
+    height: 1250px;
+  }
+}
+
+.what__item {
+  position: absolute;
+  left: 0px;
+  min-width: 100%;
+  padding: 60px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: #1c1c1c;
+  z-index: 2;
+  top: 30px;
+  opacity: 0.5;
+  transform: scale(0.94);
+  transition: all 0.5s;
+
+  @media (max-width: $tablet) {
+    height: 100%;
+    top: 30px;
+    padding: 54px 45px;
+    transform: scale(0.98);
+  }
+
+  @media (max-width: $mobile) {
+    padding: 40px 20px;
+  }
+}
+
+.what__item_active {
+  z-index: 3;
+  top: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.what__item_3 {
+  .what__sublist {
+    justify-content: flex-start;
+  }
+
+  .strategy__item {
+    flex: 280px 0 0;
+  }
+}
+
+.what__sublist {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: 44px;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 24px;
+  }
+
+  .strategy__item {
+    @media (max-width: $desktop) {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: $tablet) {
+      flex-basis: 100%;
+      height: 70px;
+    }
+  }
+
+}
+
+.what__header {
+  margin-bottom: 33px;
+}
+
+.what__title {
+  display: inline-block;
+  margin: 0 32px 0 0;
+  font-family: $fontSans;
+  font-size: 38px;
+  line-height: 1.2;
+  color: #111111;
+
+  @media (max-width: $tablet) {
+    font-size: 32px;
+  }
+}
+
+.what__subtitle {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1.35;
+  color: #C3C3C3;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.what__subtitle-main {
+  color: #EB235F;
+}
+
+.what__results-title {
+  margin: 0 0 40px 0;
+  @include fontNeue(700);
+  font-size: 22px;
+
+  @media (max-width: $tablet) {
+    width: 260px;
+  }
+}
+
+.what__subtitle-subscribers {
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.what__table {
+  border-collapse: collapse;
+  width: 100%;
+
+  & td {
+    position: relative;
+    padding: 23px 20px 20px;
+    border-bottom: 1px solid #EEEEEE;
+    text-align: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 5px;
+      bottom: 5px;
+      width: 1px;
+      background: #EEEEEE;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 15px 10px 13px;
+      font-size: 14px;
+    }
+  }
+
+  & td:last-child {
+    &:before {
+      display: none;
+    }
+  }
+
+  & td:first-child {
+    text-align: left;
+  }
+
+  & td:nth-child(1n + 2) {
+    @include fontNeue(700);
+    font-size: 18px;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+    }
+  }
+
+  & tr:first-child td {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  & tr:nth-child(2) td:first-child {
+    color: inherit;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  & tr:last-child td {
+    border: none;
+  }
+}
+
+.up {
+  color: #24B02A;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 6px;
+    background-image: url("../img/up.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.what__controls {
+  @media (max-width: $tablet) {
+    height: 100%;
+  }
+}
+
+.what__toleft, .what__toright {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  width: 76px;
+  height: 76px;
+  background-color: transparent;
+  background-image: url("../img/slideBtn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s;
+
+  @media (max-width: $tablet) {
+    height: 100%;
+    width: 50px;
+    background-position: center 50%;
+  }
+
+  @media (max-width: $mobile) {
+    height: 100%;
+    width: 30px;
+    background-position: center 50%;
+  }
+}
+
+.what__toleft {
+  right: 100%;
+  transform: translate(50%, -50%);
+
+  &:hover {
+    transform: translate(50%, -50%) scale(0.99);
+  }
+
+  &:active {
+    transform: translate(50%, -50%) scale(0.97);
+    transition: transform 0.1s;
+  }
+
+  @media (max-width: $mobile) {
+    right: calc(100% - 6px);
+  }
+}
+
+.what__toright {
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(180deg);
+
+  &:hover {
+    transform: translate(-50%, -50%) rotate(180deg) scale(0.99);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) rotate(180deg) scale(0.97);
+    transition: transform 0.1s;
+  }
+
+  @media (max-width: $mobile) {
+    left: calc(100% - 6px);
+  }
+}

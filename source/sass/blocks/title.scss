@@ -1,0 +1,10 @@
+.title {
+  color: #FCFCFC;
+  font-family: $fontSans;
+  font-size: 38px;
+  line-height: 45.6px;
+
+  @media (max-width: $mobile) {
+    font-size: 32px;
+  }
+}

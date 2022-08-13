@@ -1,0 +1,141 @@
+.example__block {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $desktop) {
+    justify-content: center;
+  }
+}
+
+.example__desc {
+  width: 445px;
+  margin-right: 95px;
+
+  @media (max-width: $desktop) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 60px;
+    padding: 0 60px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+    padding: 0 0;
+  }
+}
+
+.example__view {
+  flex-grow: 1;
+}
+
+.example__title {
+  margin-top: 0;
+  margin-bottom: 70px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 30px;
+  }
+}
+
+.example__text-block {
+  padding: 0 85px 0 20px;
+
+  @media (max-width: $tablet) {
+    padding: 0 20px;
+  }
+}
+
+.example__text, .example__item {
+  margin-bottom: 20px;
+}
+
+.example__item:last-child {
+  margin-bottom: 0;
+}
+
+.example__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #F9C54B;
+  }
+}
+
+.example__link {
+  display: flex;
+  height: 333px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/example.webp");
+  background-size: cover;
+}
+
+.view {
+  display: flex;
+
+  @media (max-width: $desktop) {
+    justify-content: center;
+  }
+
+  @media (max-width: $tablet) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: -20px;
+  }
+}
+
+.view__item {
+  width: 130px;
+  margin-right: 80px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (max-width: $tablet) {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.view__title {
+  font-size: 40px;
+  font-family: $fontSans;
+  font-weight: 700;
+}
+
+.view__firstline {
+  font-family: $fontSans;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.view__secondline {
+  font-family: $fontNeue;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.example__button-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  transform: translateY(50%);
+
+  @media (max-width: $tablet) {
+    margin-top: 40px;
+  }
+}
+
+.example__button {
+  background-color: transparent;
+}

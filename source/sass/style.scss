@@ -1,0 +1,29 @@
+
+// ADDITINAL
+@import "stacktable.scss";
+
+
+// BASE
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "adjustments.scss";
+
+// BLOCKS
+@import "blocks/title.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/strategy.scss";
+@import "blocks/hero.scss";
+@import "blocks/solutions.scss";
+@import "blocks/client.scss";
+@import "blocks/portfolio.scss";
+@import "blocks/what.scss";
+@import "blocks/example.scss";
+@import "blocks/about.scss";
+@import "blocks/warranty.scss";
+@import "blocks/services.scss";
+@import "blocks/managers.scss";
+@import "blocks/footer.scss";
+@import "blocks/modal.scss";

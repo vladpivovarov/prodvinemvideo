@@ -1,0 +1,267 @@
+.warranty {
+  margin-bottom: 130px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 20px;
+  }
+}
+
+.warranty__container {
+  position: relative;
+  padding-top: 120px;
+  background-image: url("../img/test-back.png");
+  background-position: 400px 100px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+
+  @media (max-width: $tablet) {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-position: 100px 582px;
+  }
+
+  @media (max-width: $mobile) {
+    padding-bottom: 100px;
+    background-position: 0 700px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 140px;
+    top: 150px;
+    width: 105px;
+    height: 109px;
+    background-image: url("../img/warranty.png");
+    background-size: contain;
+    transition: all 1s;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    &:after {
+      right: 80px;
+      top: 130px;
+    }
+  }
+}
+
+.warranty__title {
+  position: relative;
+  z-index: 10;
+  margin: 0 0 50px 0;
+  max-width: 305px;
+
+  @media (max-width: $tablet) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.warranty__topic {
+  display: block;
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    text-align: center;
+  }
+}
+
+.warranty__list {
+  display: inline-block;
+  margin: 0 auto;
+
+  & .strategy__item {
+    margin-bottom: 37px;
+  }
+
+  & .strategy__num {
+    width: 60px;
+  }
+
+  & .strategy__desc {
+    max-width: 300px;
+  }
+
+  @media (max-width: $tablet) {
+    margin-left: -30px;
+  }
+}
+
+.warranty__title, .test__title {
+  position: relative;
+  text-align: center;
+}
+
+.warranty__sublitle, .test__sublitle {
+  position: absolute;
+  top: 45px;
+  width: 230px;
+  @include fontNeue;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.warranty__sublitle {
+  left: 70%;
+  text-align: left;
+
+  @media (max-width: $tablet) {
+    display: inline-block;
+    position: static;
+    width: 280px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+.test {
+  display: grid;
+  grid-template-columns: 570px auto;
+  column-gap: 40px;
+  padding: 65px 65px 55px 65px;
+  border-radius: 10px;
+  background-image: linear-gradient(145deg, rgba(#FF88A5, 0.1), rgba(black, 0));
+  background-color: rgb(230, 25, 66);
+
+  @media (max-width: $desktop) {
+    grid-template-columns: auto;
+    align-items: center;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 60px 20px 60px;
+  }
+}
+
+.test__topic {
+  @media (max-width: $desktop) {
+    display: block;
+  }
+}
+
+.test__title {
+  max-width: 540px;
+  margin: 0;
+  line-height: 1.2;
+  text-align: left;
+
+  @media (max-width: $desktop) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.test__sublitle {
+  left: 55%;
+  @include fontNeue(300);
+
+  @media (max-width: $desktop) {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+
+.test__right {
+  @media (max-width: $desktop) {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+.test__link-block {
+  position: relative;
+  display: inline-block;
+}
+
+.test__popup {
+  position: absolute;
+  bottom: 100%;
+  width: 278px;
+  border-radius: 10px;
+  padding: 12px;
+  left: 50%;
+  transform: translateY(-28px) translateX(-50%);
+  background-color: rgba(#000000, .6);
+  backdrop-filter: blur(10px);
+  @include fontNeue(300);
+  font-size: 14px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-top: 10px solid rgba(#000000, .6);;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -0.1px);
+
+    @media (max-width: $desktop) {
+      bottom: 100%;
+      top: initial;
+      transform: translate(-50%, 0.1px) rotate(180deg);
+    }
+  }
+
+  @media (max-width: $desktop) {
+    width: 300px;
+    top: calc(100% + 50px);
+    bottom: initial;
+  }
+
+  @media (max-width: $mobile) {
+    width: 240px;
+  }
+}
+
+.warranty__desc {
+  position: relative;
+  margin-bottom: 90px;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.warranty__link-block {
+  position: absolute;
+  left: 400px;
+  top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  padding: 20px;
+  transform: translate(40px, 40px);
+  border-radius: 50%;
+  background-color: #FDB534;
+
+  @media (max-width: $tablet) {
+    position: static;
+    margin: 0 auto 200px auto;
+    transform: translate(50px, 0);
+  }
+}
+
+.warranty__link-icon {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.warranty__link {
+  text-align: center;
+  font-size: 15px;
+  color: #0F1011;
+  text-decoration: 1px dotted underline #6E5C02;
+}
+

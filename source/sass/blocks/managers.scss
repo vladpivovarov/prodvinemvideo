@@ -1,0 +1,250 @@
+.managers {
+  margin-bottom: 100px;
+}
+
+.managers__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+  }
+
+  &::before {
+    top: 150px;
+    left: -50px;
+    width: 140px;
+    height: 140px;
+    background-image: url("../img/talk-left.png");
+    background-position: center;
+
+    @media (min-width: 1600px) {
+      transform: translate(-50px, -30px);
+    }
+  }
+
+  &::after {
+    top: 100px;
+    right: -50px;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/talk-right.png");
+
+    @media (min-width: 1600px) {
+      transform: translate(50px, 60px);
+    }
+  }
+}
+
+.managers__fake {
+  position: relative;
+  top: -30px;
+  z-index: 1;
+  width: 95%;
+  height: 40px;
+  border-radius: 10px;
+  opacity: .9;
+  background-color: #C3C3C3;
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.managers__title {
+  max-width: 500px;
+  margin-bottom: 81px;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.managers__photo {
+  @media (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.managers__image {
+  position: relative;
+  width: 852px;
+  height: 482px;
+  background-image: url("../img/managers.webp");
+  background-position: 50px top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.managers__item {
+  position: absolute;
+}
+
+.managers__item_product {
+  top: 50%;
+  left: -100px;
+  transform: translateY(40px);
+}
+
+.managers__item_up {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+}
+
+.managers__item_clients {
+  top: 50%;
+  right: -130px;
+  transform: translateY(40px);
+
+  & .managers__name {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+}
+
+.managers__name, .managers__status {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.managers__name {
+  max-width: 105px;
+  text-align: right;
+  margin-right: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.managers__status {
+  max-width: 180px;
+  border-radius: 10px;
+  padding: 8px 8px 8px 13px;
+  background-color: #FDFDFD;
+  font-size: 15px;
+  @include fontNeue(300);
+  color: #08090C;
+}
+
+.talk {
+  position: relative;
+  z-index: 2;
+}
+
+.talk__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 82px;
+  padding: 70px 89px 80px 80px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #27292E;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 30px 20px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 20px 20px;
+  }
+}
+
+.talk__title {
+  margin: 10px 0 30px 0;
+  color: #27292E;
+
+  @media (max-width: $desktop) {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.talk__list {
+  margin-left: 20px;
+
+  @media (max-width: $desktop) {
+    margin-left: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-left: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+.talk__inputs {
+  @media (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.talk__item {
+  position: relative;
+  margin-bottom: 15px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #EB235F;
+  }
+}
+
+.talk__input-block {
+  width: 294px;
+  height: 79px;
+  margin-bottom: 8px;
+  background-image: url("../../img/input.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile) {
+    width: auto;
+    height: 60px;
+  }
+
+  & input {
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    background-color: transparent;
+
+    @media (max-width: $mobile) {
+      padding: 0 20px;
+    }
+  }
+
+  & input::placeholder {
+    color: #282828;
+    @include fontNeue(300);
+    font-size: 14px;
+  }
+}
+
+.talk__btn {
+  background-color: transparent;
+  margin-left: -5px;
+
+  @media (max-width: $mobile) {
+    margin-left: 0;
+  }
+}

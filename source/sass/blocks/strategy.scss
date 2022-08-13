@@ -1,0 +1,74 @@
+.strategy {
+  display: flex;
+}
+
+.strategy__desc {
+  min-width: 159px;
+}
+
+.strategy__item {
+  display: flex;
+  flex: 240px 0 0;
+  align-items: center;
+  margin-left: 30px;
+  display: flex;
+  @include fontNeue(300);
+  font-size: 17px;
+  line-height: 1.4;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
+}
+
+.strategy_pink {
+  position: relative;
+  z-index: 10;
+  & .strategy__num {
+    background-image: url("../img/num-sprite-pink.png");
+  }
+}
+
+.strategy_silver {
+  & .strategy__num {
+    background-image: url("../img/num-sprite-silver.png");
+  }
+}
+
+.strategy__num {
+  flex-shrink: 0;
+  margin-right: 16px;
+  height: 47px;
+  background-repeat: no-repeat;
+
+  &_01 {
+    width: 47px;
+    background-position: 0px -120px;
+  }
+
+  &_02 {
+    width: 58px;
+    background-position: -125px -120px;
+  }
+
+  &_03 {
+    width: 53px;
+    background-position: -250px -120px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-size: 125px 125px;
+
+    &_01 {
+      background-position: 0px 0px;
+    }
+
+    &_02 {
+      background-position: 62.5px 0px;
+    }
+
+    &_03 {
+      background-position: 93.75px 0px;
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "clients": [
+     {
+      "name": "BeBigger",
+      "img": "../img/clients/4.png",
+      "subscribersCount": "212 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCukiqXduvdLtH30y3iPTcOg",
+      "status": ""
+    },
+    {
+      "name": "Geometrium",
+      "img": "../img/clients/5.png",
+      "subscribersCount": "346 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCssuw4KHM9I7_whvaIjyU5g",
+      "status": ""
+    },
+    {
+      "name": "Dipt",
+      "img": "../img/clients/6.png",
+      "subscribersCount": "2,65 млн подписчиков",
+      "link": "https://www.youtube.com/user/iDIPT",
+      "status": "pro"
+    },
+    {
+      "name": "Сила в Мысли",
+      "img": "../img/clients/7.png",
+      "subscribersCount": "596 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCK94EmyqKtEQFwrMy49Bbpw",
+      "status": ""
+    },
+    {
+      "name": "Сколько можно?",
+      "img": "../img/clients/8.png",
+      "subscribersCount": "2,39 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCmhtHRlj81Y2gLeOfCCpecA",
+      "status": ""
+    },
+    {
+      "name": "Наталья Закхайм",
+      "img": "../img/clients/9.png",
+      "subscribersCount": "140 тыс. подписчиков",
+      "link": "https://www.youtube.com/user/iDIPT",
+      "status": "pro"
+    },
+    {
+      "name": "Максим Спиридонов",
+      "img": "../img/clients/10.png",
+      "subscribersCount": "52,6 тыс. подписчиков",
+      "link": "https://www.youtube.com/user/iDIPT",
+      "status": ""
+    },
+    {
+      "name": "Евгений Ойстачер",
+      "img": "../img/clients/11.png",
+      "subscribersCount": "3,6 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UC3Px-RZVM1tTOmWXQxbaXbg",
+      "status": ""
+    },
+    {
+      "name": "Diana Kids Show",
+      "img": "../img/clients/12.png",
+      "subscribersCount": "76,4 млн подписчиков",
+      "link": "https://m.youtube.com/channel/UCk8GzjMOrta8yxDcKfylJYw",
+      "status": "pro"
+    },
+    {
+      "name": "Стас недвижка",
+      "img": "../img/clients/13.png",
+      "subscribersCount": "53,3 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UC1fCfxVIKoNwBfN9dMCjNAQ",
+      "status": ""
+    },
+    {
+      "name": "Евгений Колесов",
+      "img": "../img/clients/14.png",
+      "subscribersCount": "319 тыс. подписчиков",
+      "link": "https://www.youtube.com/user/kolesovevgeny",
+      "status": ""
+    },
+    {
+      "name": "Влогчейн",
+      "img": "../img/clients/15.png",
+      "subscribersCount": "27 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCmoVhCZ4RXMp6ttOTsyUtPg",
+      "status": ""
+    },
+    {
+      "name": "Димас из Батайска",
+      "img": "../img/clients/16.png",
+      "subscribersCount": "1,04 млн подписчиков",
+      "link": "https://www.youtube.com/channel/UCCeQbb6qvRTPhZ-kfSxh0Dg",
+      "status": "pro"
+    },
+    {
+      "name": "Сталик Ханкишиев",
+      "img": "../img/clients/17.png",
+      "subscribersCount": "1,7 млн подписчиков",
+      "link": "https://www.youtube.com/channel/UCO8YHPk43zHgfUFWv9FUttg",
+      "status": ""
+    },
+    {
+      "name": "Мама, я селлер",
+      "img": "../img/clients/18.png",
+      "subscribersCount": "7,54 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCjl6NMY_8ulG-B0OcCeVmTw",
+      "status": ""
+    },
+    {
+      "name": "BigMoney",
+      "img": "../img/clients/19.png",
+      "subscribersCount": "722 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCBXknSneBtw2iA8BQsXqiTw",
+      "status": "pro"
+    },
+    {
+      "name": "Влогчейн",
+      "img": "../img/clients/20.png",
+      "subscribersCount": "27 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCmoVhCZ4RXMp6ttOTsyUtPg",
+      "status": ""
+    },
+    {
+      "name": "AniDuckStudio",
+      "img": "../img/clients/21.png",
+      "subscribersCount": "824 тыс. подписчиков",
+      "link": "https://www.youtube.com/user/AniDuckStudio",
+      "status": "pro"
+    },
+    {
+      "name": "Smart Business",
+      "img": "../img/clients/22.png",
+      "subscribersCount": "101 тыс. подписчиков",
+      "link": "https://www.youtube.com/user/TakprostoBiz",
+      "status": ""
+    },
+    {
+      "name": "Аяз Шабутдинов",
+      "img": "../img/clients/23.png",
+      "subscribersCount": "283 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCP3URMaJbfJGq83X7T0wGzQ",
+      "status": "pro"
+    },
+    {
+      "name": "Жизнь Би",
+      "img": "../img/clients/24.png",
+      "subscribersCount": "378 тыс. подписчиков",
+      "link": "https://www.youtube.com/channel/UCc7npLulohCVPT6UutIqv3Q",
+      "status": "pro"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "polytics creator contacts";
+  column-gap: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+
+  @media (max-width: $desktop) {
+    column-gap: 40px;
+  }
+
+  @media (max-width: $tablet) {
+    grid-template-areas: "polytics contacts"
+                        "creator creator";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  @media (max-width: $mobile) {
+    grid-template-areas: "contacts"
+                        "polytics"
+                        "creator";
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+}
+
+.footer__left {
+  grid-area: polytics;
+}
+
+.footer__center {
+  grid-area: creator;
+
+  @media (max-width: $tablet) {
+    display: grid;
+  }
+}
+
+.footer__right {
+  grid-area: contacts;
+  text-align: right;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
+}
+
+.footer__polytics {
+  text-align: left;
+  font-size: 16px;
+  color: #454545;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
+}
+
+.footer__creator {
+  position: relative;
+  padding-right: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: #6b6b6b;
+
+  @media (max-width: $tablet) {
+    width: 360px;
+    justify-self: center;
+  }
+
+  @media (max-width: $mobile) {
+    width: auto;
+    justify-self: center;
+  }
+}
+
+.footer__address {
+  color: rgba(#ffffff, .7);
+}
+
+.footer__link {
+  position: absolute;
+  padding: 20px;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: $tablet) {
+    right: 0;
+  }
+
+  @media (max-width: $mobile) {
+    right: -20px;
+  }
+}
+
+.footer__icon, .footer__tel {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer__icon {
+  margin-right: 2px;
+}
+
+.footer__tel {
+  font-size: 20px;
+}
+
+.footer__call {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #F8B432;
+  text-decoration: 0.5px dashed underline #F8B432;
+}
