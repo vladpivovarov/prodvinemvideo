@@ -50,13 +50,13 @@
             <div class="header__mini-desc">
               Приводим клиентов в ваш бизнес и помогаем зарабатывать на YouTube
             </div>
-            <a href="#" class="header__mini-link">
+            <a href="#" class="header__mini-link modal-open-js">
               Заказать звонок
             </a>
           </div>
           <div class="header__contact">
             <a href="tel:+79003146739" class="header__phone">+7 (900) 314 67 39</a>
-            <a href="#" class="header__link">Позвонить вам?</a>
+            <a href="#" class="header__link modal-open-js">Позвонить вам?</a>
           </div>
           <button class="header__humb"></button>
         </div>
@@ -96,12 +96,12 @@
               </button>
             </div>
             <div class="hero__youtube-block">
-              <a href="#" class="hero__youtube-btn">
+              <a href="https://www.youtube.com/channel/UC3VXbjncS_SR0Es_JBmciGw/featured" class="hero__youtube-btn" target="_blank">
                 <img src="./img/youtube-btn-icon.png" width="76px" height="76px" srcset="./img/youtube-btn-icon@2x.png 2x"></img>
               </a>
               <div class="hero__youtube-link-block">
                 Подтверждаем экспертность на своем
-                <a href="https://www.youtube.com/channel/UC3VXbjncS_SR0Es_JBmciGw/featured" class="hero__youtube-link">YouTube-канале</a>
+                <a href="https://www.youtube.com/channel/UC3VXbjncS_SR0Es_JBmciGw/featured" class="hero__youtube-link" target="_blank">YouTube-канале</a>
                 »
               </div>
             </div>
@@ -116,6 +116,8 @@
           <div class="hero__looseer">
             <img src="./img/looseer.webp" alt="Основатель компании">
           </div>
+          <div class="hero__before parallax-js"></div>
+          <div class="hero__after parallax-js"></div>
         </div>
       </section>
       <section class="solutions">
@@ -176,6 +178,7 @@
               </div>
             </li>
           </ol>
+          <div class="solutions__after parallax-js"></div>
         </div>
       </section>
       <section class="portfolio" id="keys">
@@ -398,6 +401,7 @@
               <img src="./img/кнопка.svg" alt="Получить консультацию" width="339px" height="97px">
             </button>
           </div>
+          <div class="portfolio__after parallax-js"></div>
         </div>
       </section>
       <section class="example" id="channel">
@@ -423,7 +427,7 @@
               </div>
             </div>
             <div class="example__view">
-              <a href="https://www.youtube.com/channel/UC3VXbjncS_SR0Es_JBmciGw/featured" class="example__link">
+              <a href="https://www.youtube.com/channel/UC3VXbjncS_SR0Es_JBmciGw/featured" class="example__link" target="_blank">
                 <div class="example__btn">
                   <img src="./img/exampleкнопка.svg" alt="Перейти на канал" width="235px" height="66px">
                 </div>
@@ -557,6 +561,7 @@
               </div>
             </div>
           </div>
+          <div class="warranty__after parallax-js"></div>
         </div>
       </section>
       <section class="services">
@@ -709,7 +714,7 @@
                   <input type="text" required name="name" class="talk__name" placeholder="Ваше имя">
                 </div>
                 <div class="talk__input-block">
-                  <input type="text" required name="phone" class="talk__phone" placeholder="Ваш номер телефона">
+                  <input type="text" required name="phone" class="talk__phone mask-phone-js" placeholder="Ваш номер телефона">
                 </div>
                 <button class="talk__btn" type="submit">
                   <span class="visually-hidden">Обсудить проект</span>
@@ -719,6 +724,8 @@
             </form>
           </div>
           <div class="managers__fake"></div>
+          <div class="managers__before parallax-js"></div>
+          <div class="managers__after parallax-js"></div>
         </div>
       </section>
     </div>
@@ -750,7 +757,7 @@
             <img src="./img/whatsapp.svg" alt="Связь с нами" width="18px" height="18px">
           </a>
           <a href="tel:89003146739" class="footer__tel">+7 (900) 314 67 39</a>
-          <a href="" class="footer__call">Позвонить Вам?</a>
+          <a href="#" class="footer__call modal-open-js">Позвонить Вам?</a>
         </div>
       </div>
     </footer>
@@ -762,7 +769,7 @@
         <input type="text" required name="name" class="talk__name" placeholder="Ваше имя">
       </div>
       <div class="talk__input-block">
-        <input type="text" required name="phone" class="talk__phone" placeholder="Ваш номер телефона">
+        <input type="text" required name="phone" class="talk__phone mask-phone-js" placeholder="Ваш номер телефона">
       </div>
       <button class="talk__btn" type="submit">
         <span class="visually-hidden">Обсудить проект</span>

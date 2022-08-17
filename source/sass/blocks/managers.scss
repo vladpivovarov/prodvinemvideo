@@ -8,14 +8,13 @@
   flex-direction: column;
   align-items: center;
 
-  &::before, &::after {
+  & .managers__before, & .managers__after {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
-    transition: all 0.5s;
   }
 
-  &::before {
+  & .managers__before {
     top: 150px;
     left: -50px;
     width: 140px;
@@ -24,11 +23,12 @@
     background-position: center;
 
     @media (min-width: 1600px) {
-      transform: translate(-50px, -30px);
+      top: 200px;
+      left: -80px;
     }
   }
 
-  &::after {
+  & .managers__after {
     top: 100px;
     right: -50px;
     width: 120px;
@@ -36,7 +36,8 @@
     background-image: url("../img/talk-right.png");
 
     @media (min-width: 1600px) {
-      transform: translate(50px, 60px);
+      top: 50px;
+      right: 10px;
     }
   }
 }

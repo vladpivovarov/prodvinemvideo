@@ -13,22 +13,19 @@
   padding: 0px 60px 44px 90px;
   background-color: #0A0A0A;
 
-  &:after {
-    content: "";
+  & .solutions__after {
     position: absolute;
     top: 150px;
-    left: 100%;
+    left: calc(100% + 10px);
     width: 103px;
     height: 107px;
-    transform: translateX(10px);
     background-image: url("../img/solution-triangle.png");
-    transition: transform 0.5s, top 0.5s;
   }
 
   @media (max-width: 1600px) {
-    &:after {
+    & .solutions__after {
       top: 190px;
-      transform: translateX(-30px);
+      left: calc(100% - 30px);
     }
   }
 

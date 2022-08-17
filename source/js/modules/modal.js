@@ -13,7 +13,8 @@ const modal = () => {
 
   // При клике на одну из кнопок отображаем модальное окно
   btns.forEach((button) => {
-    button.addEventListener("click", () => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
       modal.classList.add("modal_active");
     });
   })

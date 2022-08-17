@@ -57,18 +57,18 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-size: 125px 125px;
+    background-size: 177px;
 
     &_01 {
       background-position: 0px 0px;
     }
 
     &_02 {
-      background-position: 62.5px 0px;
+      background-position: -62.5px 0px;
     }
 
     &_03 {
-      background-position: 93.75px 0px;
+      background-position: -125px 0px;
     }
   }
 }

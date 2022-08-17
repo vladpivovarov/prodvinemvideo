@@ -10,8 +10,7 @@
   position: relative;
   padding: 0 45px;
 
-  &::after {
-    content: "";
+  & .portfolio__after {
     position: absolute;
     top: 40px;
     right: calc(100% + 50px);
@@ -21,12 +20,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: right 0.5s;
   }
 
   @media (max-width: 1600px) {
 
-    &:after {
+    & .portfolio__after {
       right: 100%;
     }
   }

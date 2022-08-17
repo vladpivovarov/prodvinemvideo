@@ -5,6 +5,9 @@ import menu from "./modules/menu";
 import table from "./modules/resizeTable";
 import modal from "./modules/modal";
 import scroll from "./modules/scroll";
+import headerFixed from "./modules/headerFixed";
+import parallax from "./modules/parallax";
+import mask from "./modules/mask";
 
 checkJs();
 download();
@@ -13,3 +16,6 @@ menu();
 table();
 modal();
 scroll();
+headerFixed();
+parallax();
+mask();
